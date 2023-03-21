@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --card-background: #1A1B2B;
+  --green: #258A2F;
+  --green-dark: #29582F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  font-size: 62.5%;
+  list-style: none;
+  color: #fff;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--card-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card,
+.card nav,
+.card .buttons,
+.card .number,
+.content ul {
+  display: flex;
+}
+
+.card .content,
+.card .image {
+  width: 100%;
+}
+
+.card {
+  width: 126rem;
+  justify-content: space-between;
+  border: 3px solid var(--card-background);
+  padding: 6rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.836);
+}
+
+.content nav figure {
+  width: 4rem;
+  transform: rotate(-30deg);
+}
+
+figure img {
+  width: 100%;
+}
+
+.content nav figure img {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(253deg) brightness(103%) contrast(104%);
+}
+
+.content nav {
+  gap: 10rem;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+
+.content nav ul {
+  gap: 5rem;
+  align-items: center;
+}
+
+.content nav ul li {
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.content nav ul li:nth-child(2){
+  border: 2px solid var(--green);
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+
+.content section,
+.content .buttons {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content section span {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.content section h1 {
+  font-size: 5.8rem;
+  letter-spacing: .7rem;
+  margin-bottom: 1.6rem;
+}
+
+.content section p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 1.6rem;
+}
+
+.content .buttons {
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 11.5rem;
+}
+
+.content .buttons figure {
+  border: 2px solid #313031;
+  border-radius: 50%;
+}
+
+.content .buttons figure img{
+  border: 2px solid #464546;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.content .buttons span {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.content .number {
+  align-items: center;
+  gap: 1rem;
+}
+
+.content .number p {
+  font-size: 1.7rem;
+}
+
+.content .number div {
+  width: 26.5rem;
+  height: .1rem;
+  background: #464546;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.content .number div:after {
+  content: "";
+  width: 50%;
+  height: calc(100% + 2px);
+  border-radius: 1rem;
+  top: -1px;
+  background: white;
+  position: absolute;
+}
+
+.card .image {
+  position: relative;
+}
+
+.image figure {
+  width: 100%;
+  border: 1px solid var(--green);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  background: conic-gradient(from 142.31deg at 50% 50%, rgba(0, 85, 10, 0.47) -127.5deg, #002C4B 35.62deg, rgba(0, 85, 10, 0.47) 232.5deg, #002C4B 395.63deg);
+  padding: 3rem;
+  z-index: 0;
+  box-shadow: 0px 0px 14rem rgba(28, 177, 28, 0.438);
+}
+
+.image figure:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(from 142.31deg at 50% 50%, #258A2F -156.76deg, #29582F 23deg, #258A2F 203.24deg, #29582F 383deg);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: .5;
+}
+
+.image figure img {
+  position: relative;
+  top: 0;
+}
